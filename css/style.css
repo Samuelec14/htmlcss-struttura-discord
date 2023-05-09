@@ -45,51 +45,65 @@
 
 /* MAIN  
 */
-section{
-    padding: 30px;
-}
-
-/* 1st SECTION ROW 
-*/
-    .row-sec1{
-        justify-content: center;
-    }
-    .column-sec1{
-        width: 900px;
+    section{
+        padding: 30px;
     }
 
-/* 2nd SECTION ROW 
-*/
-    .column1-sec2{
-        width: 60%;
+    /* 1st SECTION ROW 
+    */
+        .row-sec1{
+            justify-content: center;
+        }
+        .column-sec1{
+            width: 900px;
+        }
+
+    /* 2nd SECTION ROW 
+    */
+        .column1-sec2{
+            width: 60%;
+        }
+        .column2-sec2{
+            width: 40%;
+        }
+
+    /* 5th SECTION ROW 
+    */
+        .column1-sec5{
+            width: 100%;
+        }
+
+/* FOOTER 
+    */
+    /* 1st FOOTER SECTION ROW 
+    */
+        .column1-sec1-foot{
+            width: calc(100% / 3);
+        }
+        .column2-sec1-foot{
+            width: calc((100% / 3) * 2);
+            display: flex;
+        }
+            /* 1ST ROW OF FOOTER SECTION 1 */
+                div[class= "column2-sec1-foot debug"] > div{
+                    width: calc(100% / 4);
+                    border: 1px dashed white;
+                }
+    footer section:first-child{
+        padding: 5px 0 30px 0;
     }
-    .column2-sec2{
-        width: 40%;
+    /* 2ND FOOTER SECTION ROW 
+    */
+    footer section:last-child{
+        padding: 20px 0 0 0;
+        border-top: 1px solid #D3D3D3;
+    }
+    .row-sec2-foot{
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
     }
 
-/* 5th SECTION ROW 
-*/
-    .column1-sec5{
-        width: 100%;
-    }
-
-/* 1st FOOTER SECTION ROW 
-*/
-    .column1-sec1-foot{
-        width: calc(100% / 3);
-    }
-
-/* 2nd FOOTER SECTION ROW 
-*/
-    .column2-sec1-foot{
-        width: calc((100% / 3) * 2);
-        display: flex;
-    }
-        /* 1ST ROW OF FOOTER SECTION 1 */
-            div[class= "column2-sec1-foot debug"] > div{
-                width: calc(100% / 4);
-                border: 1px dashed white;
-            }
 
 /* DEBUG
 */
@@ -97,7 +111,7 @@ section{
     border: 1px dashed black;
 }
 header{
-    background-color: aquamarine;
+    background-color: rgb(127, 232, 255);
 }
     .header-column{
         background-color: #DAA520;
@@ -137,4 +151,15 @@ header{
 .column2-sec1-foot{
     height: 450px;
     background-color: #2fd6d6;
+}
+.column1-sec2-foot{
+    background-color: #FFC0CB;
+    padding: 3px;
+}
+.column2-sec2-foot{
+    background-color: #FFC0CB;
+    padding: 3px;
+}
+.row-sec2-foot{
+    background-color: aquamarine;
 }
