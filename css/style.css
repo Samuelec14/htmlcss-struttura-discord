@@ -8,6 +8,45 @@
 
 /* GENERAL 
 */
-    *{
-        font-family: ...;
+.my-row{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* HEADER  
+*/
+    header{
+        background-color: aquamarine;
+        height: 55px;
     }
+    header > .my-row{
+        line-height: 30px;
+        background-color: #DAA520;
+    }
+    nav{
+        display: inline-block;
+    }
+
+    .header-column{
+        display: flex;
+    }
+    .small1{
+        width: 25%;
+    }
+    .small2{
+        width: 25%;
+        justify-content: end;
+    }
+    .wide1{
+        width: 50%;
+        justify-content: center;
+    }
+
+
+/* DEBUG
+*/
+.debug{
+    border: 2px dashed black;
+}
+
