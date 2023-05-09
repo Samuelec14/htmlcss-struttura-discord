@@ -20,9 +20,9 @@
         background-color: aquamarine;
         height: 55px;
     }
-    header > .my-row{
-        line-height: 30px;
-        background-color: #DAA520;
+    .header-row{
+        height: 55px;
+        align-items: center;
     }
     nav{
         display: inline-block;
@@ -30,6 +30,8 @@
 
     .header-column{
         display: flex;
+        background-color: #DAA520;
+        line-height: 30px;
     }
     .small1{
         width: 25%;
@@ -43,6 +45,14 @@
         justify-content: center;
     }
 
+/* FIRST SECTION 
+*/
+    .sec1{
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+    }
+
 
 /* DEBUG
 */
@@ -50,3 +60,12 @@
     border: 2px dashed black;
 }
 
+.first-section{
+    height: 300px;
+    background-color: blue;
+}
+.section1{
+    background-color: #EE82EE;
+    height: 200px;
+    width: 900px;
+}
