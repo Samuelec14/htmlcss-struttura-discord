@@ -29,7 +29,6 @@
 
     .header-column{
         display: flex;
-        background-color: #DAA520;
         line-height: 30px;
     }
     .small1{
@@ -50,7 +49,7 @@ section{
     padding: 30px;
 }
 
-/* FIRST SECTION ROW 
+/* 1st SECTION ROW 
 */
     .row-sec1{
         justify-content: center;
@@ -59,7 +58,7 @@ section{
         width: 900px;
     }
 
-/* SECOND SECTION ROW 
+/* 2nd SECTION ROW 
 */
     .column1-sec2{
         width: 60%;
@@ -68,6 +67,29 @@ section{
         width: 40%;
     }
 
+/* 5th SECTION ROW 
+*/
+    .column1-sec5{
+        width: 100%;
+    }
+
+/* 1st FOOTER SECTION ROW 
+*/
+    .column1-sec1-foot{
+        width: calc(100% / 3);
+    }
+
+/* 2nd FOOTER SECTION ROW 
+*/
+    .column2-sec1-foot{
+        width: calc((100% / 3) * 2);
+        display: flex;
+    }
+        /* 1ST ROW OF FOOTER SECTION 1 */
+            div[class= "column2-sec1-foot debug"] > div{
+                width: calc(100% / 4);
+                border: 1px dashed white;
+            }
 
 /* DEBUG
 */
@@ -77,24 +99,42 @@ section{
 header{
     background-color: aquamarine;
 }
-.first-sec-bg{
+    .header-column{
+        background-color: #DAA520;
+    }
+.blue-bg{
     background-color: blue;
 }
-    .column-sec1{
-        background-color: #EE82EE;
-        height: 300px;
-    }
-.second-sec-bg{
+.white-bg{
     background-color: white;
 }
-    .column1-sec2{
-        height: 300px;
-        background-color: #1E90FF;
-    }
-    .column2-sec2{
-        height: 300px;
-        background-color: #FFC0CB;
-    }
-.third-sec-bg{
+.gray-bg{
     background-color: #D3D3D3;
+}
+.dark-gray-bg{
+    background-color: #0E0E0E;
+}
+.column-sec1{
+    background-color: #EE82EE;
+    height: 300px;
+}
+.column1-sec2{
+    height: 300px;
+    background-color: #1E90FF;
+}
+.column2-sec2{
+    height: 300px;
+    background-color: #FFC0CB;
+}
+.column1-sec5{
+    height: 700px;
+    background-color: #228B22;
+}
+.column1-sec1-foot{
+    height: 450px;
+    background-color: lightcoral;
+}
+.column2-sec1-foot{
+    height: 450px;
+    background-color: #2fd6d6;
 }
